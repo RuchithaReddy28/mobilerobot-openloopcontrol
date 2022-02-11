@@ -7,10 +7,10 @@ To develop a python control code to move the mobilerobot along the predefined pa
 1. RoboMaster EP core
 2. Python 3.7
 
-## Procedure
+## Procedure:
 
 ## Step1:
-atart
+Start
 
 <br/>
 
@@ -86,7 +86,7 @@ if name == 'main':
 ## MobileRobot Movement Video:
 
 Upload your video in Youtube and paste your video-id here.
-(https://drive.google.com/file/d/1ERxDgYqkiuYc1XnczNcftsMkchamlR_k/view?usp=sharing)
+(https://drive.google.com/file/d/1umhyLR-6WqwYVfY7a3U_U_XWiiQR71aN/view?usp=drivesdk)
 
 
 <br/>
