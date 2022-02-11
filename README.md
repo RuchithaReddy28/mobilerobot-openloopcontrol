@@ -9,51 +9,74 @@ To develop a python control code to move the mobilerobot along the predefined pa
 
 ## Procedure
 
-Step1:
+## Step1:
+atart
 
 <br/>
 
-Step2:
+## Step2:
+From robo master import robot.
 
 <br/>
 
-Step3:
+## Step3:
+Instalaize the type.
 
 <br/>
 
-Step4:
+## Step4:
+Run the program to move the robo master through our conditions.
 
 <br/>
 
-Step5:
+## Step5:
+Stop.
 
 <br/>
 
-## Program
+## Program:
+Name:A.Ruchitha Reddy
+
+Ref.no:21005032
 ```python
 from robomaster import robot
 import time
 
-if __name__ == '__main__':
+if name == 'main':
     ep_robot = robot.Robot()
     ep_robot.initialize(conn_type="ap")
 
     ep_chassis = ep_robot.chassis
+    ep_led = ep_robot.led
 
-    ## Write your code here
+    ep_led.set_led(comp="all",r=255,g=0,b=0,effect="on")   
+       
+    ep_chassis.move(x=2, y=0, z=0, xy_speed=1.25).wait_for_completed()
+    ep_led.set_led(comp="all",r=0,g=255,b=0,effect="on") 
 
+    ep_chassis.move(x=0, y=0, z=360, xy_speed=1.25).wait_for_completed()
+    ep_led.set_led(comp="all",r=0,g=0,b=255,effect="on")  
+    ep_chassis.move(x=2.5, y=0, z=0, xy_speed=1.25).wait_for_completed()
+    ep_led.set_led(comp="all",r=255,g=0,b=0,effect="on") 
+    ep_chassis.move(x=0, y=0, z=90, xy_speed=1).wait_for_completed() 
+    ep_led.set_led(comp="all",r=0,g=255,b=0,effect="on") 
 
+    ep_chassis.move(x=1.5, y=0, z=0, xy_speed=1.25).wait_for_completed()
+    ep_led.set_led(comp="all",r=255,g=0,b=0,effect="on")
+    ep_chassis.move(x=0, y=0, z=90, xy_speed=1).wait_for_completed() 
+    ep_led.set_led(comp="all",r=0,g=0,b=255,effect="on")
 
-    
+    ep_chassis.move(x=2.5, y=0, z=0, xy_speed=1.25).wait_for_completed()
+    ep_led.set_led(comp="all",r=0,g=0,b=255,effect="on")
+    ep_chassis.move(x=0, y=0, z=90, xy_speed=1).wait_for_completed()
+    ep_led.set_led(comp="all",r=0,g=255,b=0,effect="on")
+    ep_chassis.move(x=2, y=0, z=0, xy_speed=1.25).wait_for_completed()
     ep_robot.close()
 ```
 
 ## MobileRobot Movement Image:
-
-![robo](./img/robomaster.png)
-
-Insert image here
-
+![output](https://github.com/RuchithaReddy28/mobilerobot-openloopcontrol/blob/main/mb1.jpeg?raw=true)
+![output](https://github.com/RuchithaReddy28/mobilerobot-openloopcontrol/blob/main/mb2.jpeg?raw=true)
 
 <br/>
 <br/>
@@ -62,9 +85,9 @@ Insert image here
 
 ## MobileRobot Movement Video:
 
-Upload your video in Youtube and paste your video-id here
+Upload your video in Youtube and paste your video-id here.
+(https://drive.google.com/file/d/1ERxDgYqkiuYc1XnczNcftsMkchamlR_k/view?usp=sharing)
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
 <br/>
 <br/>
